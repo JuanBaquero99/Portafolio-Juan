@@ -7,10 +7,12 @@ import Contacto from './Components/Landing/Contact';
 import Footer from './Components/Landing/Footer';
 import Observatorios from './Components/Landing/Observatorios';
 import Menu from './Components/Menu/index' 
+import Logo from './Components/Logo';
 
 function App() {
   return (
     <div>
+      <Logo />
       <Menu />
       <AboutMeSection />
       <Personality />
