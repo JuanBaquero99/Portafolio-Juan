@@ -6,7 +6,7 @@ import Proyectos from './Components/Landing/proyectos';
 import Contacto from './Components/Landing/Contact';
 import Footer from './Components/Landing/Footer';
 import Observatorios from './Components/Landing/Observatorios';
-import DropdownMenu from './Components/common/Header';
+import DropdownMenu from './Components/Landing/Header';
 
 function App() {
   return (
