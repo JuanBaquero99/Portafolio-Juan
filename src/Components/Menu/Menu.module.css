@@ -1,0 +1,14 @@
+.menuContent {
+    right: 0;
+    top: 60px;
+  }
+  
+  .menuItem {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  .menuIcon {
+    margin-left: auto;
+  }

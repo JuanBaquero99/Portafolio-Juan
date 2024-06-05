@@ -6,12 +6,12 @@ import Proyectos from './Components/Landing/proyectos';
 import Contacto from './Components/Landing/Contact';
 import Footer from './Components/Landing/Footer';
 import Observatorios from './Components/Landing/Observatorios';
-import DropdownMenu from './Components/Landing/Header';
+import Menu from './Components/Menu/index' 
 
 function App() {
   return (
     <div>
-      <DropdownMenu />
+      <Menu />
       <AboutMeSection />
       <Personality />
       <Resume />
