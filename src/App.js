@@ -16,9 +16,8 @@ function App() {
       <Menu />
       <AboutMeSection />
       <Personality />
-      <Resume />
-      <Observatorios />
       <Proyectos />
+      <Observatorios />
       <Contacto />
       <Footer />
     </div>
