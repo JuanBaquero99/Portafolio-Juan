@@ -10,11 +10,11 @@ function Proyectos() {
           <div className="inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 px-3 py-1 text-sm text-white">
             Proyectos destacados
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-indigo-900 dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4831D4]">
             Mis trabajos más recientes
           </h2>
-          <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Aquí puedes ver algunos de mis proyectos más destacados. Cada uno de ellos representa mi pasión por el diseño y la tecnología.
+          <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-600">
+            Aquí puedes ver algunos de mis proyectos más recientes. Para explorar todo mi repositorio de Github 
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

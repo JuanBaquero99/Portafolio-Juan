@@ -1,6 +1,5 @@
 import React from 'react';
 import AboutMeSection from './Components/Landing/AboutMe';
-import Resume from './Components/Landing/Resume';
 import Personality from './Components/Landing/Personality';
 import Proyectos from './Components/Landing/proyectos';
 import Contacto from './Components/Landing/Contact';
@@ -15,8 +14,8 @@ function App() {
       <Logo />
       <Menu />
       <AboutMeSection />
-      <Personality />
       <Proyectos />
+      <Personality />
       <Observatorios />
       <Contacto />
       <Footer />

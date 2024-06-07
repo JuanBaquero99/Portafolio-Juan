@@ -27,9 +27,6 @@ const Menu = () => {
         <a href="#personality" className={`${styles.menuItem} text-[#4738CA] text-4xl font-normal tracking-tighter sm:text-5xl md:text-6xl`} style={{ transitionDelay: delay(1) }}>
           Personalidad Profesional
         </a>
-        <a href="#resume" className={`${styles.menuItem} text-[#4738CA] text-4xl font-normal tracking-tighter sm:text-5xl md:text-6xl`} style={{ transitionDelay: delay(2) }}>
-          Biografía
-        </a>
         <a href="#projects" className={`${styles.menuItem} text-[#4738CA] text-4xl font-normal tracking-tighter sm:text-5xl md:text-6xl`} style={{ transitionDelay: delay(3) }}>
           Proyectos
         </a>

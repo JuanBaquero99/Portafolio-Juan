@@ -4,6 +4,12 @@ import Fondo from '../assets/images/fondo1.jpg';
 import GithubLogo from '../assets/images/github_PNG40.png';
 import LinkedInLogo from '../assets/images/R.png';
 
+const SocialLink = ({ href, src, alt }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <img src={src} alt={alt} className="w-6 h-6" />
+  </a>
+);
+
 function AboutMeSection() {
   return (
     <section
@@ -16,18 +22,18 @@ function AboutMeSection() {
         backgroundAttachment: 'fixed'
       }}
     >
-      <div className="container grid items-center justify-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+      <div className="container grid items-center justify-center gap-7 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         <div className="space-y-4">
-          <div className="inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple-300 px-3 py-1 text-sm text-gray-800 dark:text-gray-900 font-semibold">
+          <div className="inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple-300 px-3 py-1 text-sm text-gray-800 text-white font-semibold">
             Juan Pablo Baquero
           </div>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl font-serif text-[#4831D4]" style={{ fontFamily: 'Futura, sans-serif' }}>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4831D4]">
             FullStack Dev and Growth Innovator
           </h1>
-          <p className="max-w-[600px] text-gray-800 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-justify" style={{ fontFamily: 'Futura, sans-serif', color: '#444545' }}>
+          <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-600 text-justify">
             Soy la sensación del bloque (de código) como FullStack Dev, con un amor apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
           </p>
-          <p className="max-w-[600px] text-gray-800 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-justify" style={{ fontFamily: 'Futura, sans-serif', color: '#444545' }}>
+          <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-600 text-justify">
             Por lo tanto aspiro a liderar equipos, influir positivamente en las personas y perfeccionarme continuamente en metodologías para diseñar, desarrollar y ofrecer tecnologías de vanguardia que solucionen problemas concretos. Pero mientras tanto eso ocurre, soy un nerd de la tecnología.
           </p>
         </div>
@@ -40,12 +46,8 @@ function AboutMeSection() {
             className="rounded-full w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] object-cover border-4 border-ash-rose mb-4"
           />
           <div className="flex items-center justify-center space-x-4">
-            <a href="https://github.com/tucuenta" target="_blank" rel="noopener noreferrer">
-              <img src={GithubLogo} alt="GitHub Logo" className="w-6 h-6" />
-            </a>
-            <a href="https://linkedin.com/in/tucuenta" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedInLogo} alt="LinkedIn Logo" className="w-6 h-6" />
-            </a>
+            <SocialLink href="https://github.com/JuanBaquero99" src={GithubLogo} alt="GitHub Logo" />
+            <SocialLink href="https://www.linkedin.com/in/juan-pablo-baquero-dávila" src={LinkedInLogo} alt="LinkedIn Logo" />
           </div>
         </div>
       </div>
