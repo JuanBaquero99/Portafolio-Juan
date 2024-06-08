@@ -1,10 +1,18 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
+import Fondo from '../assets/images/fondo1.jpg';
 function Proyectos() {
   return (
-    <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-100 to-purple-100 dark:bg-gray-800">
+    <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-100 to-purple-100 dark:bg-gray-800"
+    style={{
+      position: 'relative',
+      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${Fondo})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+    }}   
+    >
       <div className="container grid max-w-5xl items-center justify-center gap-4 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <div className="space-y-4">
           <div className="inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 px-3 py-1 text-sm text-white">
