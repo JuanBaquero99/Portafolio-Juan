@@ -1,11 +1,13 @@
 import React from 'react';
 import profileImage from '../../Components/assets/img/Mejor.jpeg';
 import { ArrowText, ProjectCard } from '../../Components/PojectCards/index';
-import Fallout from '../../Components/assets/img/descarga.jpg'
+import Fallout from '../../Components/assets/img/fallout.jpg'
 import Mono from '../../Components/assets/img/bacavv.jpeg'
 import Internet from '../../Components/assets/img/Welcome to Internet.jpg'
 import Palabra from '../../Components/assets/img/palala.jpg'
 import LinkedinImage from '../../Components/assets/img/R.png';
+import BackgroundImage from '../../Components/assets/img/Animation.gif';
+
 
 function LinkedinLogo({ url }) {
   return (
@@ -31,7 +33,7 @@ function ProfilePictureWithLogo({ src, alt, url }) {
 // Componente reutilizable para el texto con degradado
 function GradientText({ children }) {
   return (
-    <div className="inline-block rounded-lg bg-gradient-to-r from-olive to-pastel-blue px-3 py-1 text-sm text-gray-800 text-white font-chivo font-arima text-[12px]">
+    <div className="inline-block rounded-lg bg-gradient-to-r from-blue-200 to-blue-400 px-3 py-1 text-sm text-gray-500 font-libre-baskerville text-[12px]">
       {children}
     </div>
   );
@@ -40,7 +42,7 @@ function GradientText({ children }) {
 // Componente reutilizable para el encabezado
 function CustomHeader({ children }) {
   return (
-    <h1 className="text-3xl font-playfair tracking-tighter sm:text-4xl md:text-5xl text-olive font-chivo">
+    <h1 className="text-[#45C1A5] font-league-spartan tracking-tighter sm:text-4xl md:text-5xl border border-black rounded-lg p-5 bg-white bg-opacity-50 shadow-lg">
       {children}
     </h1>
   );
@@ -49,67 +51,75 @@ function CustomHeader({ children }) {
 // Componente reutilizable para el párrafo
 function CustomParagraph({ children }) {
   return (
-    <p className="max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify font-overpass">
+    <p className="max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify font-libre-baskerville border border-black rounded-lg p-5 bg-white bg-opacity-50 shadow-lg">
       {children}
     </p>
   );
 }
 
-
-
 function AboutMe() {
   return (
-    <section className='mt-20 text-black' style={{background: 'linear-gradient(to right, #FFFFFF, #E0E0E0)'}}>
-      <div className="container grid items-center justify-center gap-7 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
-        <div className="space-y-4">
-          <GradientText>
-            Juan Pablo Baquero
-          </GradientText>
-          <CustomHeader>
-            FullStack Dev and Growth Innovator
-          </CustomHeader>
-          <CustomParagraph>
-            Soy la sensación del bloque (de código) como FullStack Dev, con un amor apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
-          </CustomParagraph>
+    <section className='mt-5 text-black' style={{
+      position: 'relative',
+      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${BackgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+    <div className="container grid items-center justify-center gap-7 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
+      <div className="space-y-4">
+      <div>
+        <GradientText>
+          Juan Pablo Baquero
+        </GradientText>
         </div>
-        <ProfilePictureWithLogo
-          src={profileImage}
-          alt="Juan Pablo Baquero"
-          url='www.linkedin.com/in/juan-pablo-baquero-dávila'
-        />
         <CustomHeader>
-          Proyectos recientes
+          FullStack Dev and Growth Innovator
         </CustomHeader>
-        <ArrowText url="https://github.com/JuanBaquero99">Click aquí al repositorio completo de Github</ArrowText>
-        <ProjectCard
-          image={Fallout}
-          title="PipBoy Fallout"
-          description="Aplicación de To-Do List con temática de PipBoy inspirada en el videojuego Fallout. Desarrollada con React y TailwindCSS."
-          url="https://juanbaquero99.github.io/App-Lista-Actividades/"
-          technologies={["React", "TailwindCSS", "VSCode", "JavaScript", "CCS"]}
-        />
-        <ProjectCard
-          image={Mono}
-          title="Bacav"
-          description="Ecommerce en desarrollo para marca de ropa interior masculina, desarrollado con React y TailwindCSS."
-          technologies={["React", "TailwindCSS", "VSCode", "JavaScript", "CCS"]}
-        />
-        <ProjectCard
-          image={Internet}
-          title="Analizador URL"
-          description="Un paquete para Node.js que analiza URLs y extrae información de ellas, como el protocolo, el dominio, la ruta y los parámetros."
-          technologies={[ "VsCode", "JavaScript", "Npm", "VSCode"]}
-        />
-        <ProjectCard
-          image={Palabra}
-          title="Mensaje Random"
-          description="El paquete 'random-str-msg-unbaq', diseñado para generar mensajes de cadena aleatorios de manera eficiente. Este paquete, desarrollado como un aporte a la comunidad, ha sido publicado en el registro de paquetes de Node.js (NPM)."
-          url="https://github.com/JuanBaquero99"
-          technologies={["VSCode", "JavaScript", "Npm"]}
-        />
+        <CustomParagraph>
+          Soy la sensación del bloque (de código) como FullStack Dev, con un amor apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
+        </CustomParagraph>
       </div>
-    </section>
-  );
+      <ProfilePictureWithLogo
+        src={profileImage}
+        alt="Juan Pablo Baquero"
+        url='www.linkedin.com/in/juan-pablo-baquero-dávila'
+      />
+      <CustomHeader>
+        Proyectos recientes
+      </CustomHeader>
+      <ArrowText url="https://github.com/JuanBaquero99">Click aquí al repositorio completo de Github</ArrowText>
+      <ProjectCard
+        image={Fallout}
+        title="PipBoy Fallout"
+        description="Aplicación de To-Do List con temática de PipBoy inspirada en el videojuego Fallout. Desarrollada con React y TailwindCSS."
+        url="https://juanbaquero99.github.io/App-Lista-Actividades/"
+        technologies={["React", "TailwindCSS", "VSCode", "JavaScript", "CCS"]}
+      />
+      <ProjectCard
+        image={Mono}
+        title="Bacav"
+        description="Ecommerce en desarrollo para marca de ropa interior masculina, desarrollado con React y TailwindCSS."
+        technologies={["React", "TailwindCSS", "VSCode", "JavaScript", "CCS"]}
+      />
+      <ProjectCard
+        image={Internet}
+        title="Analizador URL"
+        description="Un paquete para Node.js que analiza URLs y extrae información de ellas, como el protocolo, el dominio, la ruta y los parámetros."
+        technologies={[ "VsCode", "JavaScript", "Npm", "VSCode"]}
+      />
+      <ProjectCard
+        image={Palabra}
+        title="Mensaje Random"
+        description="El paquete 'random-str-msg-unbaq', diseñado para generar mensajes de cadena aleatorios de manera eficiente. Este paquete, desarrollado como un aporte a la comunidad, ha sido publicado en el registro de paquetes de Node.js (NPM)."
+        url="https://github.com/JuanBaquero99"
+        technologies={["VSCode", "JavaScript", "Npm"]}
+      />
+    </div>
+  </section>
+);
+
 }
 
+export { CustomHeader, CustomParagraph, GradientText };
 export default AboutMe;
