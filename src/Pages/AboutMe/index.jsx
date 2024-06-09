@@ -77,7 +77,7 @@ function AboutMe() {
           FullStack Dev and Growth Innovator
         </CustomHeader>
         <CustomParagraph>
-          Soy la sensación del bloque (de código) como FullStack Dev, con un amor apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
+          Soy la sensación del bloque (de código) como FullStack Dev, apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
         </CustomParagraph>
       </div>
       <ProfilePictureWithLogo

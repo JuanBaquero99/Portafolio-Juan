@@ -1,5 +1,6 @@
 import { CustomHeader, CustomParagraph } from "../AboutMe/index";
 import BackgroundImage from '../../Components/assets/img/Animation.gif';
+import { ArrowText } from "../../Components/PojectCards";
 
 function Observatorio() {
     return (
@@ -18,14 +19,15 @@ function Observatorio() {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
         }}>
-            <CustomHeader>
+            <CustomHeader style={{marginTop: '50px'}}>
             Observatorios Urbanos de IA para Ecosistemas de Comunidades (OUEC)
             </CustomHeader>
-            <CustomParagraph>
-            Los Observatorios Urbanos de IA para Ecosistemas de Comunidades (OUEC) son plataformas de investigación y desarrollo que utilizan tecnologías de Inteligencia Artificial (IA) para analizar, monitorear y mejorar los ecosistemas de las comunidades urbanas. A través del uso de IA, los OUEC pueden recopilar y analizar grandes cantidades de datos para ayudar a los gobiernos locales y las comunidades a tomar decisiones. Estos observatorios pueden proporcionar información crítica sobre una variedad de temas, desde el cuidado, talento local hasta el medio ambiente y la salud pública.
-
-Inspirados en las Manzanas de Cuidado de las cuales pueden profundizar información en <a href="https://manzanasdelcuidado.gov.co/" target="_blank" rel="noopener noreferrer">Manzanas de Cuidado</a> y <a href="https://www.bbc.com/mundo/articles/cqeq38je3qro" target="_blank" rel="noopener noreferrer">BCC Manzanas de Cuidado</a> 🍎. Y en los Cerebral Valley aquí <a href="https://sfstandard.com/2023/01/13/what-is-cerebral-valley-san-franciscos-nerdiest-new-neighborhood/" target="_blank" rel="noopener noreferrer">Cerebral Valleys</a> 🧠.
+            <CustomParagraph style={{width: '80%', height: '50%', overflowX: 'auto'}}>
+            Los Observatorios Urbanos de IA para Ecosistemas de Comunidades (OUEC) son plataformas de investigación y desarrollo que utilizan tecnologías de Inteligencia Artificial (IA) para analizar, monitorear y mejorar los ecosistemas de las comunidades urbanas.
             </CustomParagraph>
+            <ArrowText url="https://www.notion.so/Observatorios-Urbanos-de-IA-para-Ecosistemas-de-Comunidades-OUEC-865a0b3761964c8eb88f56f494e3be96">
+                Haz click aquí para profundizar en proyecto
+            </ArrowText>
         </section>
     );
 }

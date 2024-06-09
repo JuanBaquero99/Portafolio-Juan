@@ -7,17 +7,17 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className='flex items-center justify-between fixed top-0 w-full p-5 bg-gradient-to-r from-green-400 to-blue-500 shadow-md z-10 text-black'>
-            <div className='flex items-center text-white text-xl sm:text-2xl font-tiny5'> {/* Aquí se cambió la clase */}
+        <nav className='flex items-center justify-between fixed top-0 w-full p-5 bg-gradient-to-r from-green-400 to-blue-500 shadow-md z-10 text-white'>
+            <div className='flex items-center text-xl sm:text-2xl font-tiny5'>
                 MySpace Juan Pablo Baquero 
-                <PiAlienBold className='ml-2 text-lg sm:text-xl' /> {/* Aquí se movió el icono y se le añadió un margen a la izquierda */}
+                <PiAlienBold className='ml-2 text-lg sm:text-xl' />
             </div>
             <button onClick={() => setIsOpen(!isOpen)} className='text-lg font-semibold text-white'>
                 <GiHamburgerMenu />
             </button>
 
             {isOpen && (
-                <ul className='flex flex-col items-start space-y-4 bg-[#16161A] shadow-md rounded-md absolute right-0 top-full mt-2 py-2 px-4 text-white'>
+                <ul className='flex flex-col items-start space-y-4 bg-gradient-to-r from-green-400 to-blue-500 shadow-md z-10 rounded-md absolute right-0 top-full mt-2 py-2 px-4 text-white font-tiny5'>
                     <li>
                         <NavLink to='/' activeClassName='text-blue-500' className='transition-colors duration-200 hover:text-red-500'>
                             Acerca de mi

@@ -3,10 +3,12 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { DarkModeProvider } from '.././src/Components/DarkMode/index';
 import Navbar from './Components/Navbar';
+import Footer from '../src/Pages/Footer/index'; // Asegúrate de importar el componente Footer
 import AboutMe from './Pages/AboutMe/index';
 import Personality from './Pages/Personality/Personality';
 import Laboral from './Pages/Laboral/index';
-import Observatorio from './Pages/Observatorio/index'; // Asegúrate de importar el componente correcto
+import Observatorio from './Pages/Observatorio/index';
+import Contacto from './Pages/Contacto/index';
 
 const App = () => {
     return (
@@ -22,8 +24,11 @@ const App = () => {
                     <Route path='/' element={<AboutMe />} />
                     <Route path='/Personality' element={<Personality />} />
                     <Route path='/Laboral' element={<Laboral />} />
-                    <Route path='/Observatorio' element={<Observatorio />} /> 
+                    <Route path='/Observatorio' element={<Observatorio />} />
+                    <Route path='/Contacto' element={<Contacto />} />
+                     
                 </Routes>
+                <Footer /> {/* Aquí agregas el componente Footer */}
             </Router>
         </DarkModeProvider>
     );
