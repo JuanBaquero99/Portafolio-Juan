@@ -7,7 +7,16 @@ import Internet from '../../Components/assets/img/Welcome to Internet.jpg'
 import Palabra from '../../Components/assets/img/palala.jpg'
 import LinkedinImage from '../../Components/assets/img/R.png';
 import BackgroundImage from '../../Components/assets/img/Animation.gif';
-
+import { IoLogoJavascript } from "react-icons/io";
+import { FaPython } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { DiMysql } from "react-icons/di";
+import { SiPostgresql } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
+import { FaNodeJs } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
 
 function LinkedinLogo({ url }) {
   return (
@@ -79,6 +88,19 @@ function AboutMe() {
         <CustomParagraph>
           Soy la sensación del bloque (de código) como FullStack Dev, apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
         </CustomParagraph>
+        <div className="flex space-x-4">
+      <FaPython Icon={FaPython} label="Python" />
+      <IoLogoJavascript Icon={IoLogoJavascript} label="JavaScript" />
+      <FaReact Icon={FaReact} label="React" />
+      <RiTailwindCssFill Icon={RiTailwindCssFill} label="TailwindCSS" />
+      <DiMysql Icon={DiMysql} label="MySQL" />
+      <SiPostgresql Icon={SiPostgresql} label="PostgreSQL" />
+      <FaLinux Icon={FaLinux} label="Linux" />
+      <IoLogoGithub Icon={IoLogoGithub} label="GitHub" />
+      <FaNodeJs Icon={FaNodeJs} label="Node.js" />
+      <SiFastapi Icon={SiFastapi} label="FastAPI" />
+
+    </div>
       </div>
       <ProfilePictureWithLogo
         src={profileImage}

@@ -1,16 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { PiAlienBold } from "react-icons/pi";
+import { GiClick } from "react-icons/gi";
+import './styles.css';
 
-const Navbar = () => {
+
+const Navbar = ({ bgColor, onAlienClick }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isArrowVisible, setIsArrowVisible] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsArrowVisible(false);
+        }, 20000); // 20 segundos
+
+        return () => clearTimeout(timer); // Limpiar el timer al desmontar el componente
+    }, []);
 
     return (
-        <nav className='flex items-center justify-between fixed top-0 w-full p-5 bg-gradient-to-r from-green-400 to-blue-500 shadow-md z-10 text-white'>
+        <nav className={`flex items-center justify-between fixed top-0 w-full p-5 ${bgColor} shadow-md z-10 text-white`}>
             <div className='flex items-center text-xl sm:text-2xl font-tiny5'>
                 MySpace Juan Pablo Baquero 
-                <PiAlienBold className='ml-2 text-lg sm:text-xl' />
+                <div className='flex items-center'>
+                    <PiAlienBold className='ml-2 text-lg sm:text-xl' onClick={onAlienClick} />
+                    {isArrowVisible && <GiClick className='mr-2 arrow' />}
+                </div>
             </div>
             <button onClick={() => setIsOpen(!isOpen)} className='text-lg font-semibold text-white'>
                 <GiHamburgerMenu />
