@@ -21,7 +21,7 @@ import { SiFastapi } from "react-icons/si";
 function TechIcon({ Icon, label }) {
   return (
     <div className="flex flex-col items-center">
-      <Icon className="w-8 h-8" />
+      <Icon className="w-5 h-5" />
       <span>{label}</span>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 
 export const DarkModeContext = createContext();
 
-export const DarkModeProvider = ({ children }) => {
+export const CambiarFondo = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     return (

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { DarkModeProvider } from '.././src/Components/DarkMode/index';
 import Navbar from './Components/Navbar';
 import Footer from '../src/Pages/Footer/index';
 import AboutMe from './Pages/AboutMe/index';
@@ -9,6 +8,7 @@ import Personality from './Pages/Personality/Personality';
 import Laboral from './Pages/Laboral/index';
 import Observatorio from './Pages/Observatorio/index';
 import Contacto from './Pages/Contacto/index';
+import { CambiarFondo } from './Components/CambioFondo/index'; // Asegúrate de importar CambiarFondo
 
 const App = () => {
     const [colorIndex, setColorIndex] = useState(0);
@@ -19,7 +19,7 @@ const App = () => {
     }
 
     return (
-        <DarkModeProvider>
+        <CambiarFondo>
             <Helmet>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +36,7 @@ const App = () => {
                 </Routes>
                 <Footer bgColor={colors[colorIndex]} />
             </Router>
-        </DarkModeProvider>
+        </CambiarFondo>
     );
 };
 
