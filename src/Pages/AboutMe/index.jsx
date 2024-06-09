@@ -18,6 +18,15 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaNodeJs } from "react-icons/fa";
 import { SiFastapi } from "react-icons/si";
 
+function TechIcon({ Icon, label }) {
+  return (
+    <div className="flex flex-col items-center">
+      <Icon className="w-8 h-8" />
+      <span>{label}</span>
+    </div>
+  );
+}
+
 function LinkedinLogo({ url }) {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
@@ -89,18 +98,17 @@ function AboutMe() {
           Soy la sensación del bloque (de código) como FullStack Dev, apasionado por Python, JavaScript y el Hacking (ético). Mi objetivo no se limita a ser el best programator 'in the hello world', sino impulsar iniciativas tecnológicas innovadoras. Valoro una perspectiva generalista del desarrollo y el liderazgo de proyectos tecnológicos.
         </CustomParagraph>
         <div className="flex space-x-4">
-      <FaPython Icon={FaPython} label="Python" />
-      <IoLogoJavascript Icon={IoLogoJavascript} label="JavaScript" />
-      <FaReact Icon={FaReact} label="React" />
-      <RiTailwindCssFill Icon={RiTailwindCssFill} label="TailwindCSS" />
-      <DiMysql Icon={DiMysql} label="MySQL" />
-      <SiPostgresql Icon={SiPostgresql} label="PostgreSQL" />
-      <FaLinux Icon={FaLinux} label="Linux" />
-      <IoLogoGithub Icon={IoLogoGithub} label="GitHub" />
-      <FaNodeJs Icon={FaNodeJs} label="Node.js" />
-      <SiFastapi Icon={SiFastapi} label="FastAPI" />
-
-    </div>
+  <TechIcon Icon={FaPython} label="Python" />
+  <TechIcon Icon={IoLogoJavascript} label="JavaScript" />
+  <TechIcon Icon={FaReact} label="React" />
+  <TechIcon Icon={RiTailwindCssFill} label="TailwindCSS" />
+  <TechIcon Icon={DiMysql} label="MySQL" />
+  <TechIcon Icon={SiPostgresql} label="PostgreSQL" />
+  <TechIcon Icon={FaLinux} label="Linux" />
+  <TechIcon Icon={IoLogoGithub} label="GitHub" />
+  <TechIcon Icon={FaNodeJs} label="Node.js" />
+  <TechIcon Icon={SiFastapi} label="FastAPI" />
+</div>
       </div>
       <ProfilePictureWithLogo
         src={profileImage}
