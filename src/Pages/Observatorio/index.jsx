@@ -1,4 +1,3 @@
-import { CustomHeader, CustomParagraph } from "../AboutMe/index";
 import BackgroundImage from '../../Components/assets/img/Animation.gif';
 import { ArrowText } from "../../Components/PojectCards";
 

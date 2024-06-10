@@ -1,4 +1,3 @@
-import { CustomHeader, CustomParagraph } from "../AboutMe/index";
 import BackgroundImage from '../../Components/assets/img/Animation.gif';
 import GifImage from '../../Components/assets/img/hom.gif';
 
